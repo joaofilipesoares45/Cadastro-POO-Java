@@ -14,5 +14,4 @@ Objetivos:
 - Utilizar o controle de excessões do java.
 
 Resultado esperado:
-Sistema cadastral em java, utilizando recursos da programação orientada a objetos na linguagem Java e a persistência de dados em arquivos binários;
-
+Sistema cadastral em java, utilizando recursos da programação orientada a objetos na linguagem Java e a persistência de dados em arquivos binários.
