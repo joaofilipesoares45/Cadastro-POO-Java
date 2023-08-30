@@ -4,8 +4,10 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Main {
+public class Main2 {
     public static void main(String args[]) throws FileNotFoundException, IOException, ClassNotFoundException {
+
+        System.out.println("Procedimento 2");
 
         PessoaFisica pf1 = new PessoaFisica();
         pf1.setCpf("11111111111");
@@ -26,10 +28,10 @@ public class Main {
             repo1.inserir(pessoaFisica);
         }
 
-        repo1.persistir("Procedimento 2/PessoaFisica.binBackup");
+        repo1.persistir("Procedimento_2/PessoaFisica.binBackup");
 
         PessoaFisicaRepo repo2 = new PessoaFisicaRepo();
-        repo2.recuperar("Procedimento 2/PessoaFisica.binBackup",pfList.size());
+        repo2.recuperar("Procedimento_2/PessoaFisica.binBackup",pfList.size());
 
         PessoaJuridica pj1 = new PessoaJuridica();
         pj1.setCnpj("33333333333333");
@@ -47,10 +49,10 @@ public class Main {
         for (PessoaJuridica pessoaJuridica : pjList) {
             repo3.inserir(pessoaJuridica);
         }
-        repo3.persistir("Procedimento 2/PessoaJuridica.binBackup");
+        repo3.persistir("Procedimento_2/PessoaJuridica.binBackup");
 
         PessoaJuridicaRepo repo4 = new PessoaJuridicaRepo();
-        repo4.recuperar("Procedimento 2/PessoaJuridica.binBackup",pjList.size());
+        repo4.recuperar("Procedimento_2/PessoaJuridica.binBackup",pjList.size());
 
     }
 }
