@@ -19,7 +19,7 @@ public class Main1 {
         pf2.setId(2);
         pf2.setNome("Carlos");
         pf2.setIdade(52);
-    
+
         PessoaFisicaRepo repo1 = new PessoaFisicaRepo();
         ArrayList<PessoaFisica> pfList = new ArrayList<>();
         pfList.add(pf1);
@@ -27,11 +27,10 @@ public class Main1 {
         for (PessoaFisica pessoaFisica : pfList) {
             repo1.inserir(pessoaFisica);
         }
-
         repo1.persistir("Procedimento_1/PessoaFisica.binBackup");
 
         PessoaFisicaRepo repo2 = new PessoaFisicaRepo();
-        repo2.recuperar("Procedimento_1/PessoaFisica.binBackup",pfList.size());
+        repo2.recuperar("Procedimento_1/PessoaFisica.binBackup", pfList.size());
 
         PessoaJuridica pj1 = new PessoaJuridica();
         pj1.setCnpj("33333333333333");
@@ -52,7 +51,6 @@ public class Main1 {
         repo3.persistir("Procedimento_1/PessoaJuridica.binBackup");
 
         PessoaJuridicaRepo repo4 = new PessoaJuridicaRepo();
-        repo4.recuperar("Procedimento_1/PessoaJuridica.binBackup",pjList.size());
-
+        repo4.recuperar("Procedimento_1/PessoaJuridica.binBackup", pjList.size());
     }
 }
