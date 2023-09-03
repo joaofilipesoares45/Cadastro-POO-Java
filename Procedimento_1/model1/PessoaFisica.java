@@ -1,5 +1,4 @@
-package model;
-
+package model1;
 
 public class PessoaFisica extends Pessoa {
     private String cpf;

@@ -1,5 +1,4 @@
-package model;
-
+package model2;
 
 public class PessoaJuridica extends Pessoa{
     private String cnpj;

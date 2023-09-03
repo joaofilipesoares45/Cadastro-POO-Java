@@ -1,4 +1,5 @@
-package model;
+package model2;
+
 
 
 public class PessoaFisica extends Pessoa {
