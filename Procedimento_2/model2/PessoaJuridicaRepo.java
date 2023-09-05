@@ -67,13 +67,14 @@ public class PessoaJuridicaRepo extends PessoaJuridica {
         System.out.println("\nDigite o id da Pessoa:");
         int index = rd.nextInt();
 
-        if (PessoaJuridicaArrList.size() == 0 || index > PessoaJuridicaArrList.size()) {
+        if (PessoaJuridicaArrList.size() != 0 || index < PessoaJuridicaArrList.size()) {
             System.out.println("Resultado da busca:");
-        } else {
             System.out.println("------------------------------------------");
             System.out.println("Id Encontrado");
             PessoaJuridicaArrList.get(index).exibir();
             System.out.println("------------------------------------------");
+        } else {
+            System.out.println("Id Não Encontrado\nTente Novamente");
         }
         
     }

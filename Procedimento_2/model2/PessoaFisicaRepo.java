@@ -73,13 +73,14 @@ public class PessoaFisicaRepo extends PessoaFisica {
         System.out.println("\nDigite o id da Pessoa:");
         int index = rd.nextInt();
 
-        if (PessoaFisicaArrList.size() == 0 || index > PessoaFisicaArrList.size()) {
-            System.out.println("Id Não Encontrado\nTente Novamente");
-        } else {
+        if (PessoaFisicaArrList.size() != 0 || index < PessoaFisicaArrList.size()) {
             System.out.println("\nResultado da busca:");
             System.out.println("------------------------------------------"); 
             PessoaFisicaArrList.get(index).exibir();
             System.out.println("------------------------------------------");
+            
+        } else {
+            System.out.println("Id Não Encontrado\nTente Novamente");
         }
     }
 
