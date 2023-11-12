@@ -1,6 +1,9 @@
 package model2;
 
 import java.io.Serializable;
+import java.nio.ByteBuffer;
+import java.nio.charset.StandardCharsets;
+import java.util.List;
 
 public class Pessoa implements Serializable{
     private int id;
